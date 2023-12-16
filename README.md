@@ -1,6 +1,5 @@
-# rust_settings
-[how to use keybinds](https://wiki.facepunch.com/rust/Keybinds)
-
+# Rust custom settings
+## Changes in Settings
 Experimental
 - Optimez loading: Partial   # To load all the game assets quicker
 
@@ -15,14 +14,27 @@ Options:
  - Head bob: Off # To remove the slight bumping when running
  - Show blood: Off # To remove the blood from the screen when in slow health
 
+
+## Changes in the terminal
+In the game, press F1 and then introduce the following commands
 ```
-effects.maxgibs -1    # To remove leftovers after destroying buildings
-input.autocrouch "True"
+# To remove leftovers after destroying buildings
+effects.maxgibs -1
+
+# To ease small jump-ups from floor to floor
+input.autocrouch true
+
+# To jump higher
 physics.steps 60
 physics.minsteps 60
-
-bind u "+attack;+attack2"
-bind j "gc.collect"  # Run Garbage collector
 ```
 
-+meta.if_true "grassshadow 1";+meta.if_false "grassshadow 0"
+And then add a couple of keybinds (find the keybind documentation [here](https://wiki.facepunch.com/rust/Keybinds))
+```
+# To zoom in while aiming
+bind mouse1 +attack2;+fov 90;fov 70
+
+# Run Garbage collector
+bind j "gc.collect"  
+```
+
