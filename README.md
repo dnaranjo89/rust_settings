@@ -35,6 +35,9 @@ And then add a couple of keybinds (find the keybind documentation [here](https:/
 bind mouse1 +attack2;+fov 90;fov 70
 
 # Run Garbage collector
-bind j "gc.collect"  
+bind j "gc.collect"
+
+# Show outgoing combatlog (i.e only the damage you´ve done)
+bind f2 "consoletoggle;combatlog_outgoing"
 ```
 
