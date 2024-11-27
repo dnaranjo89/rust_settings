@@ -39,5 +39,14 @@ bind j "gc.collect"
 
 # Show outgoing combatlog (i.e only the damage you´ve done)
 bind f2 "consoletoggle;combatlog_outgoing"
+
+# Quick kill
+input.bind [leftshift+delete] kill
+
+# Toggle min/max/default lookatradius
+input.bind L ~meta.exec "client.lookatradius 0" "chat.add 0 0 MIN"; meta.exec "client.lookatradius 0.2" "chat.add 0 0 DEFAULT"; meta.exec "client.lookatradius 10" "chat.add 0 0 MAX"
+
+# Use resources in inventory
+input.bind 0 craft.add -97956382 1; craft.add 15388698 2; craft.add 1390353317 5
 ```
 
