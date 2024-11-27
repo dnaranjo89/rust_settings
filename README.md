@@ -48,5 +48,8 @@ input.bind L ~meta.exec "client.lookatradius 0" "chat.add 0 0 MIN"; meta.exec "c
 
 # Use resources in inventory
 input.bind 0 craft.add -97956382 1; craft.add 15388698 2; craft.add 1390353317 5
+
+# Autosprint
+bind T forward;sprint
 ```
 
